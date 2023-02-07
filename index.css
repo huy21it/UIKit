@@ -107,6 +107,33 @@ main .main__detail {
   margin-top: 20px;
 }
 
+.footer {
+  position: absolute;
+  width: 135px;
+  height: 40px;
+  left: 249px;
+  top: 668px;
+  display: flex;
+  flex-direction: row;
+}
+.footer .footer__btn-appstore {
+  margin-right: 30px;
+}
+.footer .footer-iphone {
+  position: absolute;
+  width: 358px;
+  height: 551px;
+  left: 840px;
+  top: -450px;
+}
+.footer .footer-iphone-screen {
+  position: absolute;
+  width: 312px;
+  height: 460px;
+  left: 863px;
+  top: -361px;
+}
+
 *,
 *::before,
 *::after {
