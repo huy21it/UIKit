@@ -1,0 +1,66 @@
+@use "../utils" as *;
+
+header {
+  background: url("../assets/img/background/background-section1-mobile.png")
+    no-repeat center center / cover;
+  background-size: 100%;
+  min-width: 321px;
+  min-height: 425px;
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .header-logo {
+      color: $primary-color;
+      width: 22px;
+      height: 24px;
+      font-size: 20px;
+      line-height: 23px;
+      text-align: center;
+      margin: 8px;
+    }
+    .header-menu {
+      display: flex;
+      flex-direction: row;
+      .actions {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        .actions-search {
+          display: flex;
+          text-align: center;
+          align-items: center;
+          margin-left: 8px;
+          .actions-search__icon {
+            width: 19.61px;
+            height: 15.94px;
+          }
+        }
+        .actions-language {
+          display: flex;
+          text-align: center;
+          align-items: center;
+          .dropdown {
+            border: 1.5px solid #ffffff;
+            border-radius: 50px;
+            background-color: transparent;
+            color: #ffffff;
+            width: 34px;
+            height: 18px;
+            font-size: 7px;
+            line-height: 10px;
+            margin-right: 8px;
+            &:focus-visible {
+              outline: none;
+            }
+            &__option {
+              background-color: black;
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

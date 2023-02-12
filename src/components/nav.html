@@ -1,0 +1,27 @@
+<div class="header">
+    <div class="header-logo">H.</div>
+    <div class="header-menu">
+      <div class="nav">
+          <include 
+            src="./components/nav-list.html"
+            locals='{
+              "classList": "nav__item ",
+              "classLink": "nav-link",
+              "list": "[`Prices`, `Booking`, `Blog`, `Services`]"
+            }'  
+          ></include>
+      </div>
+      <div class="actions">
+          <div class="actions-search">
+              <img class="actions-search__icon" src="../assets/img/icon/search_icon.svg" alt="">
+          </div>
+          <div class="actions-language">
+              <select class="dropdown">
+                <option class="dropdown__option" value="0">US</option>
+                <option class="dropdown__option" value="1">VN</option>
+                <option class="dropdown__option" value="2">JP</option>
+              </select>
+          </div>
+      </div>
+    </div>
+  </div>
