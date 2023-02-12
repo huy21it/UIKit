@@ -1,0 +1,14 @@
+@use "../utils" as *;
+
+@font-face {
+  font-family: Roboto;
+  src: url(../assets/fonts/Roboto/Roboto-Regular.ttf);
+}
+
+body {
+  font-family: $primary-font;
+  color: $text-color;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}

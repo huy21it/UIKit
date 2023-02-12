@@ -1,0 +1,56 @@
+@use "../utils" as *;
+.percentage-list {
+  margin-top: 37.4px;
+  .pie-chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 140px;
+    height: 217px;
+    &__img {
+      width: 109px;
+      height: 109px;
+    }
+    &__percent {
+      position: relative;
+      width: 69.87px;
+      height: 22.4px;
+      font-size: 32px;
+      line-height: 22px;
+      color: $text-sub-color;
+      bottom: 72px;
+      right: 12px;
+    }
+    &__percent-small {
+      position: relative;
+      width: 69.87px;
+      height: 22.4px;
+      font-size: 15px;
+      line-height: 8px;
+      color: $text-sub-color;
+      bottom: 82px;
+      left: 14px;
+    }
+    &__title {
+      position: relative;
+      width: 126px;
+      height: 16px;
+      font-size: 12px;
+      line-height: 16px;
+      color: $text-sub-color;
+      margin-top: 20px;
+      bottom: 45px;
+    }
+    &__content {
+      width: 139.73px;
+      height: 48px;
+      font-size: 11px;
+      line-height: 16px;
+      color: $text-sub-color;
+      margin-top: 8px;
+      position: relative;
+      bottom: 50px;
+    }
+  }
+}
