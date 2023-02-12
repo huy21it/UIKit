@@ -67,6 +67,7 @@ img {
   object-fit: cover;
 }
 html {
+  min-width: 320px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
