@@ -1,0 +1,24 @@
+@use "../utils" as *;
+
+.section4 {
+  height: 1304px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  &__title {
+    font-size: 20px;
+    line-height: 40px;
+    color: $text-sub-color;
+    margin-top: 29px;
+    margin-right: 28px;
+  }
+  &__content {
+    width: 240px;
+    height: 64px;
+    font-size: 11px;
+    line-height: 16px;
+    color: $text-sub-color;
+    margin-top: 7px;
+  }
+}
