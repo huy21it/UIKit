@@ -4,16 +4,19 @@
   "description": "",
   "scripts": {
     "dev": "parcel src/pages/index.html",
-    "build": "parcel build src/pages/index.html"
+    "build": "parcel build src/pages/index.html",
+    "format": "prettier --check --write src/**/*."
   },
   "keywords": [],
   "author": "",
   "dependencies": {
     "@parcel/transformer-sass": "^2.8.3",
+    "lint-staged": "^13.1.2",
     "node-modules": "^1.0.1",
     "parcel": "^2.8.3",
     "parcel-bundler": "^1.12.5",
     "posthtml-doctype": "^1.1.1",
+    "prettier": "^2.8.4",
     "sass": "^1.58.0"
   },
   "devDependencies": {
