@@ -1,0 +1,22 @@
+@use "../utils" as *;
+
+.section7 {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  &__title {
+    width: 240px;
+    height: 24px;
+    font-size: 20px;
+    line-height: 23px;
+    color: $text-sub-color;
+  }
+  &__list-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

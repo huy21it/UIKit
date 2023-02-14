@@ -1,0 +1,146 @@
+@use "../utils" as *;
+
+.section8 {
+  background: url("../assets/img/background/background-section8-mobile.png")
+    no-repeat center center / cover;
+  height: 668px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  &__title {
+    font-size: 31.2889px;
+    line-height: 40px;
+    margin-top: 60px;
+  }
+  &__form {
+    margin-top: 32px;
+    .overlay {
+      width: 290px;
+      height: 370.7px;
+      background: #4b4b4b;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+      border-radius: 8px;
+      &__main {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          224.09deg,
+          rgba(255, 255, 255, 0.7) 5.13%,
+          rgba(255, 255, 255, 7e-5) 90.88%
+        );
+        background-blend-mode: soft-light;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        .name-input,
+        .email-input {
+          width: 220px;
+          height: 35px;
+          mix-blend-mode: normal;
+          opacity: 0.8;
+          border: 1px solid #999999;
+          border-radius: 4px;
+          margin-bottom: 24px;
+          padding: 11px 14px;
+        }
+        .message-input {
+          width: 220px;
+          height: 92px;
+          mix-blend-mode: normal;
+          opacity: 0.8;
+          border: 1px solid #999999;
+          border-radius: 4px;
+          margin-bottom: 20px;
+          padding: 11px 14px 68px;
+        }
+        .checkbox-question {
+          input[type="checkbox"] {
+            accent-color: $primary-color;
+            border-radius: 4px;
+            width: 17.6px;
+            height: 17.6px;
+          }
+          p {
+            margin-left: 3px;
+          }
+          width: 160px;
+          height: 24px;
+          margin-bottom: 8px;
+          font-size: 10.7556px;
+          line-height: 24px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .submit-btn {
+          width: 140px;
+          height: 40px;
+          background: $primary-color;
+          border-radius: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 11px;
+          line-height: 13px;
+          color: $text-sub-color;
+          letter-spacing: 0.0727273em;
+        }
+      }
+    }
+  }
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    .address,
+    .email,
+    .phone {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 8px;
+      figure {
+        width: 25px;
+        height: 25px;
+      }
+      p {
+        margin-left: 12px;
+      }
+    }
+    .address {
+      .address__icon {
+        width: 11px;
+        height: 17px;
+      }
+      figure {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      p {
+        margin-left: 20px;
+      }
+    }
+    .email {
+      .email__icon {
+        width: 17px;
+        height: 10px;
+      }
+    }
+    .phone {
+      .phone__icon {
+        width: 11px;
+        height: 17px;
+      }
+      figure {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}

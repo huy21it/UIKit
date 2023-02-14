@@ -1,0 +1,11 @@
+.dot-list {
+  display: flex;
+  flex-direction: row;
+  width: 160px;
+  height: 8px;
+  justify-content: space-around;
+  &__item {
+    width: 8px;
+    height: 8px;
+  }
+}
