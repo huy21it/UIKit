@@ -1,0 +1,27 @@
+<div class="card-plan">
+  <div class="card-plan__background">
+    <img src="{{ image }}" alt="">
+  </div>
+  <div class="card-plan__content">
+    
+  </div>
+  <div class="card-plan__main">
+    <div class="header">
+      <div class="header__title">{{ title }}</div>
+      <div class="header__price-plan">
+        <figure class="icon">
+          <img  src="../assets/img/icon/price.svg" alt="">
+        </figure>
+        <div class="text">{{ price }}</div>
+      </div>
+    </div>
+    <each loop="item in {{ list }}">
+      <div class="content">
+        {{ item }}
+      </div>
+    </each>
+    <div class="get-started-btn">
+      GET STARTED
+    </div>
+  </div>
+</div>

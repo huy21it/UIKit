@@ -1,0 +1,15 @@
+@use "../utils" as *;
+
+.section6 {
+  height: 504px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  &__title {
+    color: $text-sub-color;
+    font-size: 20px;
+    line-height: 40px;
+  }
+}

@@ -1,0 +1,37 @@
+@use "../utils" as *;
+
+.card-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 115px;
+  margin: 0px 20px 0px 20px;
+  &__item {
+    margin-bottom: 42px;
+  }
+  &__item--under {
+    margin-bottom: 26px;
+  }
+  &__title {
+    width: 62px;
+    height: 15px;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.0666667em;
+    margin-bottom: 12px;
+    margin-top: 10px;
+  }
+  &__separator {
+    width: 115px;
+    height: 1px;
+    box-sizing: border-box;
+    background: #7d7d7d;
+    margin-bottom: 10px;
+  }
+  &__content {
+    font-size: 11px;
+    line-height: 13px;
+    width: 115px;
+    margin-bottom: 8px;
+  }
+}
