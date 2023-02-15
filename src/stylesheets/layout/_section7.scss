@@ -9,10 +9,16 @@
   text-align: center;
   background-color: #f6f6f6;
   @include desktop {
-    height: 680px;
+    height: 920px;
   }
   @include tablet {
     height: 449px;
+  }
+  @include desktop-lager {
+    height: 680px;
+  }
+  @include mobile-small {
+    height: 1000px;
   }
   &__title {
     width: 240px;
@@ -37,8 +43,9 @@
   }
   &__list-card {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
   }
 }

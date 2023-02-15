@@ -7,12 +7,18 @@
   align-items: center;
   text-align: center;
   @include desktop {
-    height: 820px;
+    height:  1400px;
   }
   @include tablet {
     height: 520px;
   }
   @include tablet-small {
+    height: 820px;
+  }
+  @include mobile-lager {
+    height: 780px;
+  }
+  @include desktop-lager {
     height: 820px;
   }
   &__title {
