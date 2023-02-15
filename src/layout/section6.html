@@ -1,13 +1,26 @@
 <div class="section6">
   <div class="section6__title">Testimonials</div>
-  <include 
+  <div class="section6__list-card">
+    <include 
     src="./components/card.html"
     locals='{
-      "content": "Attending a trade show can be a very effective method of promoting your company and its products.",
-      "username": "Rachel Moreno",
-      "description": "Lead Designer in okodesign.net",
-      "image": "../assets/img/user/person1.png"
+      "class": "active",
+      "content": "It is not because things are difficult that we do not dare; it is because we do not dare that they are difficult.",
+      "username": "Seneca the Younger",
+      "description": "Editor in okodesign.net",
+      "image": "../assets/img/user/person2.png"
     }' 
   ></include>
+    <include 
+      src="./components/card.html"
+      locals='{
+        "class": "",
+        "content": "Attending a trade show can be a very effective method of promoting your company and its products.",
+        "username": "Rachel Moreno",
+        "description": "Lead Designer in okodesign.net",
+        "image": "../assets/img/user/person1.png"
+      }' 
+    ></include>
+  </div>
   <include src="./components/dot-list.html"></include>
 </div>

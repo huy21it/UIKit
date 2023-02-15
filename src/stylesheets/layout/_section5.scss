@@ -1,4 +1,4 @@
-@use "../utils" as *;
+@use '../utils' as *;
 
 .section5 {
   background-color: $primary-color;
@@ -8,12 +8,30 @@
   align-items: center;
   text-align: center;
   justify-content: center;
+  @include desktop {
+    height: 500px;
+  }
+  @include tablet {
+    height: 440px;
+  }
   &__title {
     width: 288px;
     height: 40px;
     color: $text-sub-color;
     font-size: 20px;
     line-height: 40px;
+    @include desktop {
+      font-size: 44px;
+      line-height: 48px;
+      width: 485px;
+      height: 48px;
+    }
+    @include tablet {
+      font-size: 32px;
+      line-height: 40px;
+      width: 485px;
+      height: 40px;
+    }
   }
   &__content {
     width: 213px;
@@ -22,6 +40,18 @@
     font-size: 11px;
     line-height: 16px;
     margin-top: 7px;
+    @include desktop {
+      width: 286px;
+      height: 48px;
+      font-size: 16px;
+      line-height: 24px;
+      margin-top: 20px;
+    }
+    @include tablet {
+      width: 286px;
+      height: 16px;
+      margin-top: 10px;
+    }
   }
   &__input {
     margin-top: 20px;
@@ -31,6 +61,16 @@
     border-radius: 4px;
     border: none;
     padding: 11px 14px;
+    @include desktop {
+      width: 230px;
+      height: 45px;
+      margin-top: 30px;
+    }
+    @include tablet {
+      margin-top: 40px;
+      width: 220px;
+      height: 36px;
+    }
   }
   &__btn {
     background-color: $text-sub-color;
@@ -42,5 +82,14 @@
     align-items: center;
     text-align: center;
     justify-content: center;
+    @include desktop {
+      width: 230px;
+      height: 48px;
+      margin-top: 50px;
+    }
+    @include tablet {
+      width: 220px;
+      height: 40px;
+    }
   }
 }

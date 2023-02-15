@@ -1,4 +1,4 @@
-@use "../utils" as *;
+@use '../utils' as *;
 
 .footer {
   background-color: $text-sub-color;
@@ -7,10 +7,25 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @include desktop {
+    justify-content: flex-start;
+    height: 466px;
+  }
+  @include tablet {
+    justify-content: flex-start;
+    height: 320px;
+  }
   &__list-card {
     display: flex;
     flex-wrap: wrap;
-    width: 320px;
+    justify-content: center;
+    width: 100%;
+    @include desktop {
+      margin-top: 40px;
+    }
+    @include tablet {
+      margin-top: 20px;
+    }
   }
   &__separator {
     width: 290px;
@@ -18,42 +33,103 @@
     box-sizing: border-box;
     background: #7d7d7d;
     margin-top: 30px;
+    @include desktop {
+      width: 87%;
+    }
+    @include tablet {
+      width: 87%;
+    }
   }
-  &__list-contact {
+  &__main {
+    width: 87%;
     display: flex;
-    flex-direction: row;
-    margin-top: 24px;
+    justify-content: center;
     align-items: center;
-    .icon-social-network {
-      width: 17px;
-      height: 17px;
-      margin-right: 30px;
-      &:last-child {
-        margin-right: 0px;
+    flex-direction: column;
+    @include desktop {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+    @include tablet {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+    .footer-main__list-contact {
+      display: flex;
+      flex-direction: row;
+      margin-top: 24px;
+      align-items: center;
+      .icon-social-network {
+        width: 17px;
+        height: 17px;
+        @include desktop {
+          width: 24px;
+          height: 24px;
+          margin-right: 43px;
+          &:last-child {
+            margin-right: 0px;
+          }
+        }
+        margin-right: 30px;
+        &:last-child {
+          margin-right: 0px;
+        }
+      }
+      .icon-in {
+        width: 18px;
+        height: 17px;
+        @include desktop {
+          width: 25px;
+          height: 24px;
+        }
+      }
+      .icon-google {
+        width: 25px;
+        height: 16px;
+        @include desktop {
+          width: 36px;
+          height: 23px;
+        }
+      }
+      .icon-twitter {
+        width: 21px;
+        height: 17px;
+        @include desktop {
+          width: 36px;
+          height: 23px;
+        }
       }
     }
-    .icon-in {
-      width: 18px;
-      height: 17px;
+
+    .footer-main__copyright {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @include desktop {
+        align-items: flex-start;
+      }
+      @include tablet {
+        align-items: flex-start;
+      }
+      .title {
+        font-size: 11px;
+        line-height: 13px;
+        margin-top: 30px;
+        margin-bottom: 3px;
+        @include desktop {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+      .description {
+        font-size: 11px;
+        line-height: 13px;
+        margin-bottom: 30px;
+        @include desktop {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
     }
-    .icon-google {
-      width: 25px;
-      height: 16px;
-    }
-    .icon-twitter {
-      width: 21px;
-      height: 17px;
-    }
-  }
-  &__copyright {
-    font-size: 11px;
-    line-height: 13px;
-    margin-top: 30px;
-    margin-bottom: 3px;
-  }
-  &__created {
-    font-size: 11px;
-    line-height: 13px;
-    margin-bottom: 30px;
   }
 }

@@ -1,69 +1,185 @@
-@use "../utils" as *;
+@use '../utils' as *;
 
 .section1 {
   display: flex;
   flex-direction: column;
-  position: relative;
-  width: 115px;
-  height: 15px;
-  left: 50px;
-  bottom: 385px;
-  &__function-title {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-  &__title {
-    width: 164px;
-    height: 38px;
-    font-size: 2rem;
-    line-height: 2.375rem;
-    color: $primary-color;
-    text-align: center;
-    margin-top: 15px;
-  }
-  &__thesis {
-    width: 334px;
-    height: 36px;
-    font-size: 0.75rem;
-    line-height: 0.875rem;
-    display: flex;
-    align-items: center;
-    margin-top: 12px;
-  }
-  &__detail {
-    width: 239px;
-    height: 80px;
-    font-size: 0.6875rem;
-    line-height: 1rem;
-    display: flex;
-    align-items: center;
-    margin: 20px 0px;
-  }
-  .iphone {
-    height: 110px;
-    &__frame {
-      width: 225px;
-      height: 110px;
-    }
-    &__screen {
-      width: 169px;
-      height: 95px;
-      position: relative;
-      bottom: 109px;
-      left: 28px;
-    }
-  }
-  .download {
+  width: 100%;
+  margin: 30px 20px 0px 0px;
+  justify-content: center;
+  align-items: center;
+  @include desktop {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin-top: 10px;
-    margin-left: 35px;
-    &__appstore,
-    &__google-play {
-      width: 67.5px;
-      height: 20px;
-      margin-left: 7.5px;
+    justify-content: center;
+    width: 100%;
+    margin: 0px;
+  }
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin: 0px;
+  }
+  &__content {
+    @include desktop {
+      display: flex;
+      flex-direction: column;
+      margin-top: 70px;
+    }
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      margin-top: 70px;
+      margin-right: 20px;
+    }
+    .function-title {
+      font-size: 0.75rem;
+      line-height: 1rem;
+      letter-spacing: 0.0444444em;
+      @include desktop {
+        font-size: 18px;
+        line-height: 21px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+        letter-spacing: 0.0555556em;
+      }
+      @include tablet {
+        font-size: 12px;
+        line-height: 16px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+        letter-spacing: 0.0832079em;
+      }
+    }
+    .title {
+      width: 164px;
+      height: 38px;
+      font-size: 2rem;
+      line-height: 2.375rem;
+      letter-spacing: 0.03125em;
+      color: $primary-color;
+      text-align: center;
+      margin-top: 15px;
+      @include desktop {
+        width: 329px;
+        height: 75px;
+        font-size: 64px;
+        line-height: 75px;
+        margin-top: 130px;
+        letter-spacing: 0.03125em;
+        margin-left: 20px;
+      }
+      @include tablet {
+        font-size: 36px;
+        line-height: 42px;
+        letter-spacing: 0.0554719em;
+        margin-top: 50px;
+        margin-left: 10px;
+      }
+    }
+    .thesis {
+      width: 179px;
+      height: 15px;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.03125em;
+      display: flex;
+      align-items: center;
+      margin-top: 12px;
+      @include desktop {
+        width: 360px;
+        height: 36px;
+        font-size: 24px;
+        line-height: 36px;
+        margin-top: 40px;
+      }
+      @include tablet {
+        width: 190px;
+        height: 16px;
+        font-size: 12.0181px;
+        line-height: 16px;
+        margin-top: 30px;
+      }
+    }
+    .detail {
+      width: 239px;
+      height: 80px;
+      font-size: 0.6875rem;
+      line-height: 1rem;
+      display: flex;
+      align-items: center;
+      margin: 20px 0px;
+      @include desktop {
+        width: 459px;
+        height: 96px;
+        font-size: 16px;
+        line-height: 24px;
+      }
+      @include tablet {
+        font-size: 11px;
+        line-height: 16px;
+        width: 283.64px;
+        height: 80px;
+      }
+    }
+    .iphone {
+      height: 110px;
+      width: 225px;
+      @include desktop {
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
+      }
+      @include tablet {
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
+      }
+    }
+    .download {
+      display: flex;
+      flex-direction: row;
+      margin-left: 35px;
+      margin-top: 10px;
+      @include desktop {
+        margin-left: 0px;
+        margin-top: 60px;
+      }
+      @include tablet {
+        margin-left: 0px;
+      }
+      .appstore,
+      .google-play {
+        width: 67.5px;
+        height: 20px;
+        margin-left: 7.5px;
+        @include desktop {
+          width: 135px;
+          height: 40px;
+          margin-left: 30px;
+        }
+        @include tablet {
+          width: 71.91px;
+          height: 21.29px;
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+  .iphone-desktop {
+    visibility: hidden;
+    @include desktop {
+      visibility: inherit;
+      width: 358px;
+      height: 551px;
+      margin-left: 130px;
+      padding-top: 114px;
+    }
+    @include tablet {
+      visibility: inherit;
+      width: 220px;
+      height: 337px;
+      padding-top: 54px;
     }
   }
 }
+                        

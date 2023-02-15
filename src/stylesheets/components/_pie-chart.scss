@@ -1,16 +1,29 @@
-@use "../utils" as *;
+@use '../utils' as *;
 .percentage-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-top: 37.4px;
   .pie-chart {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 140px;
+    width: 200px;
     height: 217px;
+    @include desktop {
+      margin-right: 180px;
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
     &__img {
       width: 109px;
       height: 109px;
+      @include desktop {
+        width: 204px;
+        height: 205px;
+      }
     }
     &__percent {
       position: relative;
@@ -21,6 +34,13 @@
       color: $text-sub-color;
       bottom: 72px;
       right: 12px;
+      @include desktop {
+        font-size: 64px;
+        line-height: 42px;
+        position: relative;
+        bottom: 134px;
+        right: 26px;
+      }
     }
     &__percent-small {
       position: relative;
@@ -31,6 +51,13 @@
       color: $text-sub-color;
       bottom: 82px;
       left: 14px;
+      @include desktop {
+        font-size: 30px;
+        line-height: 16px;
+        position: relative;
+        bottom: 132px;
+        left: 28px;
+      }
     }
     &__title {
       position: relative;
@@ -41,6 +68,12 @@
       color: $text-sub-color;
       margin-top: 20px;
       bottom: 45px;
+      @include desktop {
+        font-size: 18px;
+        line-height: 30px;
+        width: 185px;
+        height: 30px;
+      }
     }
     &__content {
       width: 139.73px;
@@ -51,6 +84,13 @@
       margin-top: 8px;
       position: relative;
       bottom: 50px;
+      @include desktop {
+        font-size: 16px;
+        line-height: 24px;
+        width: 262px;
+        height: 72px;
+        margin-top: 20px;
+      }
     }
   }
 }

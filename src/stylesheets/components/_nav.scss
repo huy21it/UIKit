@@ -1,18 +1,24 @@
-@use "../utils" as *;
+@use '../utils' as *;
 
 .nav {
   display: flex;
   flex-direction: row;
   text-align: center;
   align-items: center;
-  margin: 8px 0px;
+  margin: 16px 0px;
   .nav__item {
     margin: 10px;
     list-style: none;
     display: flex;
+    @include desktop {
+      margin-right: 30px;
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
     .nav-link {
-      font-size: 10px;
-      line-height: 12px;
+      font-size: 18px;
+      line-height: 21px;
     }
   }
 }

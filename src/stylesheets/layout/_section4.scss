@@ -1,4 +1,4 @@
-@use "../utils" as *;
+@use '../utils' as *;
 
 .section4 {
   height: 1304px;
@@ -6,12 +6,29 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  @include desktop {
+    height: 820px;
+  }
+  @include tablet {
+    height: 520px;
+  }
+  @include tablet-small {
+    height: 820px;
+  }
   &__title {
     font-size: 20px;
     line-height: 40px;
     color: $text-sub-color;
     margin-top: 29px;
     margin-right: 28px;
+    @include desktop {
+      font-size: 44px;
+      line-height: 48px;
+    }
+    @include tablet {
+      font-size: 32px;
+      line-height: 40px;
+    }
   }
   &__content {
     width: 240px;
@@ -20,5 +37,17 @@
     line-height: 16px;
     color: $text-sub-color;
     margin-top: 7px;
+    @include desktop {
+      font-size: 16px;
+      line-height: 24px;
+      width: 555px;
+      height: 72px;
+    }
+    @include tablet {
+      font-size: 11px;
+      line-height: 16px;
+      width: 555px;
+      height: 32px;
+    }
   }
 }

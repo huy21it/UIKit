@@ -1,5 +1,13 @@
 //Font
 $primary-font: Roboto;
+//Breakpoints
+$small: 640px;
+$medium: 768px;
+$extra-large: 1024px;
+
+$tablet-small: calc($small - 1px);
+$tablet: calc($medium - 1px);
+$desktop: calc($extra-large - 1px);
 
 // Color
 $primary-color: #ebcb80;

@@ -1,17 +1,32 @@
-@use "../utils" as *;
+@use '../utils' as *;
 
 .section3 {
-  background: url("../assets/img/background/background-section3-mobile.png")
+  background: url('../assets/img/background/background-section3-mobile.png')
     no-repeat center center / cover;
-  min-height: 344px;
+  height: 344px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  justify-content: center;
+  @include desktop {
+    height: 620px;
+  }
+  @include tablet {
+    height: 330px;
+  }
   &__title {
     font-size: 20px;
     line-height: 40px;
     margin-top: 28px;
+    @include desktop {
+      font-size: 44px;
+      line-height: 48px;
+    }
+    @include tablet {
+      font-size: 32px;
+      letter-spacing: -0.025em;
+    }
   }
   &__comma {
     width: 70.87px;
@@ -21,32 +36,100 @@
     color: $primary-color;
     position: relative;
     top: 35px;
+    @include desktop {
+      font-size: 144px;
+      line-height: 169px;
+      top: -60px;
+    }
+    @include tablet {
+      visibility: hidden;
+    }
   }
   &__content {
-    width: 240px;
-    height: 112px;
-    font-size: 12px;
-    line-height: 16px;
-    text-align: left;
-    position: relative;
-    bottom: 52px;
+    display: flex;
+    flex-direction: row;
+    @include tablet {
+      position: relative;
+      bottom: 52px;
+    }
+    .paragraph {
+      height: 112px;
+      font-size: 12px;
+      line-height: 16px;
+      text-align: left;
+      position: relative;
+      bottom: 52px;
+      @include desktop {
+        width: 750px;
+        height: 180px;
+        font-size: 24px;
+        line-height: 36px;
+        text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+        padding-top: 20px;
+      }
+      @include tablet {
+        width: 470px;
+        height: 64px;
+        bottom: 0px;
+      }
+    }
+    .prev__btn, .next__btn{
+      visibility: hidden;
+      @include desktop {
+        visibility: inherit;
+        width: 64px;
+        height: 64px;
+      }
+      @include tablet {
+        visibility: inherit;
+        width: 40px;
+        height: 40px;
+      }
+    }
+    .prev__btn {
+      @include desktop {
+        margin-right: 150px;
+      }
+      @include tablet {
+        margin-right: 40px;
+      }
+    }
+    .next__btn {
+      @include desktop {
+        margin-left: 150px;
+      }
+      @include tablet {
+        margin-left: 40px;
+      }
+    }
   }
   &__user {
     display: flex;
     flex-direction: row;
     position: relative;
     bottom: 30px;
+    @include desktop {
+      margin-top: 40px;
+    }
     .avatar {
-      .avatar__img {
-        width: 48px;
-        height: 48px;
-        border: 2px solid $primary-color;
-        border-radius: 50%;
+      width: 48px;
+      height: 48px;
+      border: 2px solid $primary-color;
+      border-radius: 50%;
+      @include desktop {
+        width: 72px;
+        height: 72px;
+        border: none;
       }
     }
     .profile {
-      &__user-name, &__user-tag-name {
+      &__user-name,
+      &__user-tag-name {
         margin-left: 16px;
+        @include desktop {
+          padding-top: 10px;
+          margin-left: 30px;
+        }
       }
       &__user-name {
         width: 85px;
@@ -54,6 +137,11 @@
         font-size: 12px;
         line-height: 30px;
         color: $primary-color;
+        @include desktop {
+          width: 127px;
+          height: 30px;
+          font-size: 18px;
+        }
       }
       &__user-tag-name {
         width: 87px;
@@ -62,6 +150,9 @@
         line-height: 30px;
         position: relative;
         bottom: 14px;
+        @include desktop {
+          font-size: 16px;
+        }
       }
     }
   }
