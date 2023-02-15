@@ -1,13 +1,18 @@
 //Font
 $primary-font: Roboto;
 //Breakpoints
-$small: 640px;
+$small: 400px;
+$extra-small: 640px;
 $medium: 768px;
-$extra-large: 1024px;
+$large: 1024px;
+$extra-large: 1280px;
 
-$tablet-small: calc($small - 1px);
-$tablet: calc($medium - 1px);
-$desktop: calc($extra-large - 1px);
+$mobile-small: 320px;
+$mobile-lager: $small;
+$tablet-small: $extra-small;
+$tablet: $medium;
+$desktop: $large;
+$desktop-lager: $extra-large;
 
 // Color
 $primary-color: #ebcb80;

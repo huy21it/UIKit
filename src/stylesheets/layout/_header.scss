@@ -1,9 +1,10 @@
 @use '../utils' as *;
 
 header {
-  background: url('../assets/img/background/background-section1-mobile.png')
-    no-repeat center center / cover;
-  background-size: 100%;
+  background: url('../assets/img/background/background-section1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
   height: 425px;
   @include tablet {
     height: 410px;
@@ -15,11 +16,12 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    visibility: hidden;
+    display: none;
     height: 0px;
     @include desktop {
-      visibility: inherit;
+      display: flex;
       height: 75px;
+      align-items: center;
     }
     .header-logo {
       color: $primary-color;
@@ -28,7 +30,7 @@ header {
       font-size: 36px;
       line-height: 42px;
       text-align: center;
-      margin: 16px;
+      
     }
     .header-menu {
       display: flex;
