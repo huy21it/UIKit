@@ -1,4 +1,4 @@
-@use "../utils" as *;
+@use '../utils' as *;
 
 .section7 {
   height: 600px;
@@ -7,16 +7,38 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  background-color: #f6f6f6;
+  @include desktop {
+    height: 680px;
+  }
+  @include tablet {
+    height: 449px;
+  }
   &__title {
     width: 240px;
     height: 24px;
     font-size: 20px;
     line-height: 23px;
     color: $text-sub-color;
+    @include desktop {
+      font-size: 44px;
+      line-height: 48px;
+      width: 396px;
+      height: 48px;
+      margin-bottom: 50px;
+    }
+    @include tablet {
+      width: 270px;
+      height: 40px;
+      font-size: 32px;
+      line-height: 40px;
+      margin-bottom: 30px;
+    }
   }
   &__list-card {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 10px;
   }
 }

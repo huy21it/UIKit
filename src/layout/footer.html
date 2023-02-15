@@ -11,7 +11,7 @@
     <include 
       src="./components/card-footer.html"
       locals='{
-        "class": "card-footer__item",
+        "class": "card-footer__item--above-right",
         "title": "PRODUCTS",
         "list": "[`UI Kits`,`Icons`,`Wordpress Themes`,`Mock-Ups`]"
       }'
@@ -19,7 +19,7 @@
     <include 
       src="./components/card-footer.html"
       locals='{
-        "class": "",
+        "class": "card-footer__item--under-left",
         "title": "SUPPORT",
         "list": "[`Community`,`Forum`,`Distributors`,`Privacy Policy`,`Terms of Use`]"
       }'
@@ -27,30 +27,34 @@
     <include 
       src="./components/card-footer.html"
       locals='{
-        "class": "card-footer__item--under",
+        "class": "card-footer__item--under-right",
         "title": "CUSTOMERS",
         "list": "[`Documentation`,`Tools`,`Downloads`,`Developer Center`]"
       }'
     ></include>
   </div>
   <div class="footer__separator"></div>
-  <div class="footer__list-contact">
-    <figure class="icon-social-network icon-in">
-      <img src="../assets/img/icon/in.svg" alt="">
-    </figure>
-    <figure class="icon-social-network icon-google" > 
-      <img src="../assets/img/icon/google-plus.svg" alt="">
-    </figure>
-    <figure class="icon-social-network icon-twitter">
-      <img src="../assets/img/icon/twitter.svg" alt="">
-    </figure>
-    <figure class="icon-social-network icon-facebook">
-      <img src="../assets/img/icon/facebook.svg" alt="">
-    </figure>
-    <figure class="icon-social-network icon-instagram">
-      <img src="../assets/img/icon/instagram.svg" alt="">
-    </figure>
-  </div>
-  <div class="footer__copyright">© 2016 Hofmann UI Kit</div>
-  <div class="footer__created">Created by Goldenfox — okodesign.net</div>
+  <figure class="footer__main">
+    <div class="footer-main__list-contact">
+      <figure class="icon-social-network icon-in">
+        <img src="../assets/img/icon/in.svg" alt="">
+      </figure>
+      <figure class="icon-social-network icon-google" > 
+        <img src="../assets/img/icon/google-plus.svg" alt="">
+      </figure>
+      <figure class="icon-social-network icon-twitter">
+        <img src="../assets/img/icon/twitter.svg" alt="">
+      </figure>
+      <figure class="icon-social-network icon-facebook">
+        <img src="../assets/img/icon/facebook.svg" alt="">
+      </figure>
+      <figure class="icon-social-network icon-instagram">
+        <img src="../assets/img/icon/instagram.svg" alt="">
+      </figure>
+    </div>
+    <div class="footer-main__copyright">
+      <div class="title">© 2016 Hofmann UI Kit</div>
+      <div class="description">Created by Goldenfox — okodesign.net</div>
+    </div>
+  </figure>
 </div>

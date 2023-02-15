@@ -1,3 +1,5 @@
+@use '../utils' as *;
+
 .dot-list {
   display: flex;
   flex-direction: row;
@@ -7,5 +9,13 @@
   &__item {
     width: 8px;
     height: 8px;
+  }
+  &__item--hidden {
+    @include desktop {
+      display: none;
+    }
+    @include tablet {
+      display: none;
+    }
   }
 }
