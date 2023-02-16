@@ -5,6 +5,18 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  @include mobile-lager {
+    width: 400px;
+  }
+  @include tablet-small {
+    width: 400px;
+  }
+  @include desktop {
+    width: 810px;
+  }
+  @include desktop-lager {
+    width: 100%;
+  }
   .product {
     display: flex;
     flex-direction: column;
