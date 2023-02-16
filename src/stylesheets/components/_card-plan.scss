@@ -4,20 +4,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 50%;
-
-  @include tablet-small {
-    flex: 1;
-  }
-  @include tablet {
-    flex: 1;
-  }
-  @include desktop {
-    flex: 1;
-  }
-  @include desktop-lager {
-    flex: 1;
-  }
   &__content {
     width: 140px;
     height: 224px;

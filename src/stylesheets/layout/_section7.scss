@@ -15,7 +15,7 @@
     height: 449px;
   }
   @include tablet-small {
-    height: 449px;
+    height: 600px;
   }
   @include desktop-lager {
     height: 680px;
@@ -47,9 +47,23 @@
   }
   &__list-card {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
     flex-wrap: wrap;
+    gap: 20px;
+    @include desktop {
+      width: 610px;
+    }
+    @include desktop-lager {
+      width: 100%;
+    }
+    @include mobile-lager {
+      width: 410px;
+    }
+    @include tablet-small {
+      width: 410px;
+    }
   }
 }

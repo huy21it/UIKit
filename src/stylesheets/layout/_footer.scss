@@ -26,6 +26,9 @@
     @include tablet {
       margin-top: 20px;
     }
+    @include mobile-lager {
+      width: 400px;
+    }
   }
   &__separator {
     width: 63%;
@@ -41,6 +44,9 @@
     }
     @include tablet-small {
       width: 80%;
+    }
+    @include mobile-lager {
+      width: 46%;
     }
   }
   &__main {

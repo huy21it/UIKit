@@ -1,7 +1,7 @@
 @use "variables" as *;
 
 @mixin mobile-small {
-  @media screen and (min-width: calc($mobile-small - 1px) ) and (max-width: $mobile-lager) {
+  @media screen and (min-width: $mobile-small ) and (max-width: $mobile-lager) {
     @content;
   }
 }
