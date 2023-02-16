@@ -15,9 +15,6 @@
     justify-content: flex-start;
     height: 320px;
   }
-  @include mobile-small {
-    height: 900px;
-  }
   &__list-card {
     display: flex;
     flex-wrap: wrap;
