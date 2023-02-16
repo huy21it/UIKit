@@ -21,7 +21,7 @@
     width: 100%;
     margin: 0px;
   }
-  &__content {
+  &-content {
     margin-top: 40px;
     @include desktop {
       display: flex;
@@ -32,9 +32,9 @@
       display: flex;
       flex-direction: column;
       margin-top: 70px;
-      margin-right: 20px;
+      margin-right: 60px;
     }
-    .function-title {
+    &__function-title {
       font-size: 0.75rem;
       line-height: 1rem;
       letter-spacing: 0.0444444em;
@@ -51,7 +51,7 @@
         letter-spacing: 0.0832079em;
       }
     }
-    .title {
+    &__title {
       width: 164px;
       height: 38px;
       font-size: 2rem;
@@ -78,7 +78,7 @@
         margin-left: 10px;
       }
     }
-    .thesis {
+    &__thesis {
       width: 179px;
       height: 15px;
       font-size: 12px;
@@ -102,7 +102,7 @@
         margin-top: 30px;
       }
     }
-    .detail {
+    &__detail {
       width: 239px;
       height: 80px;
       font-size: 0.6875rem;
@@ -123,7 +123,7 @@
         height: 80px;
       }
     }
-    .iphone {
+    &__device {
       height: 110px;
       width: 225px;
       display: block;
@@ -138,7 +138,7 @@
         width: 0px;
       }
     }
-    .download {
+    .section1-download {
       display: flex;
       flex-direction: row;
       margin-left: 35px;
@@ -150,8 +150,8 @@
       @include tablet {
         margin-left: 0px;
       }
-      .appstore,
-      .google-play {
+      &__appstore,
+      &__google-play {
         width: 67.5px;
         height: 20px;
         margin-left: 7.5px;
@@ -168,7 +168,7 @@
       }
     }
   }
-  .iphone-desktop {
+  &__device--desktop {
     display: none;
     @include desktop {
       display: block;
@@ -185,4 +185,3 @@
     }
   }
 }
-                        

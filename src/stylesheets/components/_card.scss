@@ -19,36 +19,39 @@
     width: 316px;
     height: 280px;
   }
-  &--active {
-    display: none;
-    @include tablet {
-      display: inline;
-      margin-bottom: 0px;
-      .comma,
-      .content,
-      .description {
-        color: $text-sub-color;
-      }
-    }
-    @include desktop {
-      display: inline;
-    }
-    margin-bottom: 100px;
-    .card-overlay__main {
-      background-color: $primary-color;
-      .username {
-        color: $text-sub-color;
-      }
-      @include desktop {
+  &-- {
+    display: block;
+    &active {
+      display: none;
+      @include tablet {
+        display: inline;
+        margin-bottom: 0px;
         .comma,
         .content,
         .description {
           color: $text-sub-color;
         }
       }
-    }
-    .avatar {
-      border: 2px solid #4B4B4B;
+      @include desktop {
+        display: inline;
+      }
+      margin-bottom: 100px;
+      .card-overlay__main {
+        background-color: $primary-color;
+        .username {
+          color: $text-sub-color;
+        }
+        @include desktop {
+          .comma,
+          .content,
+          .description {
+            color: $text-sub-color;
+          }
+        }
+      }
+      .avatar {
+        border: 2px solid #4B4B4B;
+      }
     }
   }
   &__main {
