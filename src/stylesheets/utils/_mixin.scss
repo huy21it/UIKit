@@ -1,13 +1,13 @@
-@use "variables" as *;
+@use 'variables' as *;
 
 @mixin mobile-small {
-  @media screen and (min-width: $mobile-small ) and (max-width: $mobile-lager) {
+  @media screen and (min-width: $mobile-small) and (max-width: calc($mobile-lager - 1px)) {
     @content;
   }
 }
 
 @mixin mobile-lager {
-  @media screen and (min-width: $mobile-lager) and (max-width: $tablet-small) {
+  @media screen and (min-width: $mobile-lager) and (max-width: calc($tablet-small - 1px)) {
     @content;
   }
 }
@@ -19,7 +19,7 @@
 }
 
 @mixin tablet {
-  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+  @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
     @content;
   }
 }
@@ -31,7 +31,7 @@
 }
 
 @mixin desktop-lager {
-  @media screen and (min-width: calc($desktop-lager + 1px)) {
+  @media screen and (min-width: $desktop-lager) {
     @content;
   }
 }
