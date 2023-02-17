@@ -40,7 +40,7 @@
         width: 290px;
         height: 372px;
       }
-      &__main {
+      &-main {
         width: 100%;
         height: 100%;
         background: linear-gradient(
@@ -55,8 +55,8 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        .name-input,
-        .email-input {
+        &__name-input,
+        &__email-input {
           width: 220px;
           height: 35px;
           mix-blend-mode: normal;
@@ -74,7 +74,7 @@
             height: 35.21px;
           }
         }
-        .message-input {
+        &__message-input {
           width: 220px;
           height: 92px;
           mix-blend-mode: normal;
@@ -92,7 +92,7 @@
             height: 91.94px;
           }
         }
-        .checkbox-question {
+        &__checkbox-question {
           input[type='checkbox'] {
             accent-color: $primary-color;
             border-radius: 4px;
@@ -119,7 +119,7 @@
           align-items: center;
           justify-content: center;
         }
-        .submit-btn {
+        &__submit-btn {
           width: 140px;
           height: 40px;
           background: $primary-color;
@@ -142,7 +142,7 @@
       }
     }
   }
-  &__contact {
+  &-contact {
     display: flex;
     flex-direction: column;
     margin: 25px;
@@ -152,9 +152,9 @@
     @include tablet {
       flex-direction: row;
     }
-    .address,
-    .email,
-    .phone {
+    &__address,
+    &__email,
+    &__phone {
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -167,7 +167,7 @@
         margin-left: 12px;
       }
     }
-    .address {
+    &__address {
       .address__icon {
         width: 11px;
         height: 17px;
@@ -181,13 +181,13 @@
         margin-left: 20px;
       }
     }
-    .email {
+    &__email {
       .email__icon {
         width: 17px;
         height: 10px;
       }
     }
-    .phone {
+    &__phone {
       .phone__icon {
         width: 11px;
         height: 17px;
