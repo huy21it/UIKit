@@ -12,65 +12,69 @@ header {
   @include desktop {
     height: 768px;
   }
-  .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    display: none;
-    height: 0px;
-    @include desktop {
-      display: flex;
-      height: 75px;
-      align-items: center;
-    }
-    .header-logo {
-      color: $primary-color;
-      width: 40px;
-      height: 43px;
-      font-size: 36px;
-      line-height: 42px;
-      text-align: center;
-      
-    }
-    .header-menu {
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0;
+    .header {
       display: flex;
       flex-direction: row;
-      .actions {
+      justify-content: space-around;
+      display: none;
+      height: 0px;
+      @include desktop {
+        display: flex;
+        height: 75px;
+        align-items: center;
+      }
+      .header-logo {
+        color: $primary-color;
+        width: 40px;
+        height: 43px;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+      }
+      .header-menu {
         display: flex;
         flex-direction: row;
-        text-align: center;
-        align-items: center;
-        .actions-search {
+        .actions {
           display: flex;
+          flex-direction: row;
           text-align: center;
           align-items: center;
-          margin-left: 70px;
-          .actions-search__icon {
-            width: 20px;
-            height: 22px;
-          }
-        }
-        .actions-language {
-          display: flex;
-          text-align: center;
-          align-items: center;
-          .dropdown {
-            border: 1.5px solid #ffffff;
-            border-radius: 50px;
-            background-color: transparent;
-            color: #ffffff;
-            width: 69px;
-            height: 36px;
-            font-size: 18px;
-            line-height: 21px;
-            margin-left: 30px;
+          .actions-search {
+            display: flex;
             text-align: center;
-            &:focus-visible {
-              outline: none;
+            align-items: center;
+            margin-left: 70px;
+            .actions-search__icon {
+              width: 20px;
+              height: 22px;
             }
-            &__option {
-              background-color: black;
-              border-radius: 5px;
+          }
+          .actions-language {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            .dropdown {
+              border: 1.5px solid #ffffff;
+              border-radius: 50px;
+              background-color: transparent;
+              color: #ffffff;
+              width: 69px;
+              height: 36px;
+              font-size: 18px;
+              line-height: 21px;
+              margin-left: 30px;
+              text-align: center;
+              &:focus-visible {
+                outline: none;
+              }
+              &__option {
+                background-color: black;
+                border-radius: 5px;
+              }
             }
           }
         }
