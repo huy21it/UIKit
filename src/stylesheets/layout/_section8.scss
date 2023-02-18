@@ -65,6 +65,7 @@
           border-radius: 4px;
           margin-bottom: 24px;
           padding: 11px 14px;
+          outline: none;
           @include desktop {
             width: 256px;
             height: 36px;
@@ -83,6 +84,7 @@
           border-radius: 4px;
           margin-bottom: 20px;
           padding: 11px 14px 68px;
+          outline: none;
           @include desktop {
             width: 256px;
             height: 94px;
@@ -95,6 +97,7 @@
         &__checkbox-question {
           input[type='checkbox'] {
             accent-color: $primary-color;
+            cursor: pointer;
             border-radius: 4px;
             width: 18px;
             height: 18px;
@@ -131,6 +134,11 @@
           line-height: 13px;
           color: $text-sub-color;
           letter-spacing: 0.0727273em;
+          cursor: pointer;
+          &:active {
+            background-color: $primary-color;
+            transform: translateY(4px);
+          }
           @include desktop {
             width: 198px;
             height: 48px;

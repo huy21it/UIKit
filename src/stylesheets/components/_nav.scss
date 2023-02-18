@@ -10,6 +10,7 @@
     margin: 10px;
     list-style: none;
     display: flex;
+    cursor: pointer;
     @include desktop {
       margin-right: 30px;
       &:last-child {
