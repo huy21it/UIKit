@@ -15,6 +15,9 @@
     justify-content: flex-start;
     height: 320px;
   }
+  @include exception {
+    height: 870px;
+  }
   &__list-card {
     display: flex;
     flex-wrap: wrap;
@@ -142,6 +145,9 @@
         @include desktop {
           font-size: 16px;
           line-height: 24px;
+        }
+        @include exception {
+          margin-bottom: 20px;
         }
       }
     }

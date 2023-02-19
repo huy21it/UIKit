@@ -5,8 +5,15 @@
   flex-direction: column;
   width: 100%;
   margin: 0px 20px 0px 0px;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+  @include desktop-lager {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin: 0px;
+  }
   @include desktop {
     display: flex;
     flex-direction: row;

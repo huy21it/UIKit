@@ -1,5 +1,11 @@
 @use 'variables' as *;
 
+@mixin exception{
+  @media screen and (min-width: $exception) and (max-width: calc($mobile-small - 1px)) {
+    @content;
+  }
+}
+
 @mixin mobile-small {
   @media screen and (min-width: $mobile-small) and (max-width: calc($mobile-lager - 1px)) {
     @content;

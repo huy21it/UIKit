@@ -5,7 +5,6 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
-  height: 425px;
   @include tablet {
     height: 410px;
   }
