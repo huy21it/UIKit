@@ -4,6 +4,9 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 37.4px;
+  @include desktop {
+    margin-bottom: 100px;
+  }
   .pie-chart {
     display: flex;
     flex-direction: column;

@@ -8,18 +8,11 @@
   justify-content: center;
   text-align: center;
   background-color: #f6f6f6;
-  overflow: hidden;
-  @include desktop {
-    height: 920px;
-  }
   @include tablet {
     height: 449px;
   }
   @include tablet-small {
     height: 600px;
-  }
-  @include desktop-lager {
-    height: 680px;
   }
   @include exception {
     height: 1200px;

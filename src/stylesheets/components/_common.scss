@@ -7,9 +7,13 @@
 @forward "dot-list";
 @forward "card-plan";
 @forward "card-footer";
+@forward "slider";
 
-.containerv {
-  max-width: 1440px;
-  padding: 0;
+.container {
+  max-width: 1280px;
   margin: 0 auto;
+}
+
+.section {
+  min-height: 100vh;
 }

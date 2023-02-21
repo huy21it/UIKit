@@ -2,21 +2,18 @@
 
 .footer {
   background-color: $text-sub-color;
-  height: 568px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   @include desktop {
-    justify-content: flex-start;
-    height: 466px;
+    justify-content: space-evenly;
+    height: 100vh;
   }
   @include tablet {
     justify-content: flex-start;
-    height: 320px;
   }
   @include exception {
-    height: 870px;
   }
   &__list-card {
     display: flex;

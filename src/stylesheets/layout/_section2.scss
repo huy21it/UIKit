@@ -8,12 +8,11 @@
   align-items: center;
   text-align: center;
   margin-top: 28px;
-  overflow: hidden;
   @include tablet {
     height: 363px;
   }
   @include desktop {
-    height: 682px;
+    height: 100vh;
   }
   @include tablet-small {
     height: 363px;

@@ -1,15 +1,10 @@
 @use '../utils' as *;
 
 .section4 {
-  height: 1304px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  overflow: hidden;
-  @include desktop {
-    height:  1400px;
-  }
   @include tablet {
     height: 520px;
   }
@@ -20,7 +15,7 @@
     height: 780px;
   }
   @include desktop-lager {
-    height: 820px;
+    justify-content: center;
   }
   &__title {
     font-size: 20px;
@@ -30,6 +25,7 @@
     @include desktop {
       font-size: 44px;
       line-height: 48px;
+      margin-top: 40px;
     }
     @include tablet {
       font-size: 32px;

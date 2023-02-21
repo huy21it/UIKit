@@ -1,17 +1,13 @@
 @use '../utils' as *;
 
 .section8 {
-  background: url('../assets/img/background/background-section8-mobile.png')
+  background: url('../assets/img/background/background-section8.png')
     no-repeat center center / cover;
   height: 668px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  overflow: hidden;
-  @include desktop {
-    height: 683px;
-  }
   &__title {
     font-size: 31.2889px;
     line-height: 40px;

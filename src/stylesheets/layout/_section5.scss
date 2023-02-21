@@ -8,10 +8,6 @@
   align-items: center;
   text-align: center;
   justify-content: center;
-  overflow: hidden;
-  @include desktop {
-    height: 500px;
-  }
   @include tablet {
     height: 440px;
   }
@@ -89,7 +85,7 @@
     cursor: pointer;
     &:active {
       background-color: $text-sub-color;
-      transform: translateY(2px);
+      transform: translateY(4px);
     }
     @include desktop {
       width: 230px;
