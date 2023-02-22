@@ -7,9 +7,12 @@
     <title>Hofmann</title>
     <link rel="stylesheet" href="../stylesheets/main.scss" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
   </head>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html-inspector/0.8.2/html-inspector.js"></script>
   <script>
     HTMLInspector.inspect();
   </script>
@@ -20,12 +23,23 @@
 
     <include src="./layout/footer.html"></include>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html-inspector/0.8.2/html-inspector.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js"
       integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script>
       AOS.init();
@@ -98,6 +112,18 @@
           $.scrollify.enable();
         }
       }
+    </script>
+    <script type="text/javascript">
+      $('.list-carousel').slick({
+        arrows: false,
+      });
+      $('.section3-content__prev-btn').click(function () {
+        $('.list-carousel').slick('slickPrev');
+      });
+
+      $('.section3-content__next-btn').click(function () {
+        $('.list-carousel').slick('slickNext');
+      });
     </script>
   </body>
 </html>

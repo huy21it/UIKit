@@ -1,8 +1,8 @@
 @use '../utils' as *;
 
 .section3 {
-  background: url('../assets/img/background/background-section3.png')
-    no-repeat center center / cover;
+  background: url('../assets/img/background/background-section3.png') no-repeat
+    center center / cover;
   height: 344px;
   display: flex;
   flex-direction: column;
@@ -27,7 +27,6 @@
       font-size: 32px;
       letter-spacing: -0.025em;
       margin-top: 0px;
-
     }
   }
   &__comma {
@@ -53,7 +52,8 @@
   &-content {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     @include tablet {
       margin-top: 30px;
@@ -61,39 +61,113 @@
     @include tablet-small {
       margin-top: 30px;
     }
-    .paragraph {
-      width: 240px;
-      height: 112px;
-      font-size: 12px;
-      line-height: 16px;
-      text-align: left;
-      position: relative;
-      bottom: 52px;
-      @include desktop {
-        width: 750px;
-        height: 180px;
-        font-size: 24px;
-        line-height: 36px;
-        text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
-        padding-top: 20px;
-      }
-      @include tablet {
-        width: 470px;
-        height: 64px;
-        bottom: 0px;
-      }
-      @include tablet-small {
-        width: 360px;
-        height: 44px;
-        bottom: 0px;
+    .list-carousel {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      max-width: 70%;
+      .carousel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__paragraph {
+          width: 240px;
+          height: 112px;
+          font-size: 12px;
+          line-height: 16px;
+          text-align: left;
+          position: relative;
+          bottom: 52px;
+          @include desktop {
+            width: 750px;
+            height: 180px;
+            font-size: 24px;
+            line-height: 36px;
+            text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+            padding-top: 60px;
+          }
+          @include tablet {
+            width: 470px;
+            height: 64px;
+            bottom: 0px;
+          }
+          @include tablet-small {
+            width: 360px;
+            height: 44px;
+            bottom: 0px;
+          }
+        }
+        &-user {
+          display: flex;
+          flex-direction: row;
+          position: relative;
+          bottom: 30px;
+          @include desktop {
+            margin-top: 40px;
+          }
+          @include tablet-small {
+            margin-top: 30px;
+            bottom: -30px;
+          }
+          @include tablet {
+            bottom: -30px;
+          }
+          &__avatar {
+            width: 48px;
+            height: 48px;
+            border: 2px solid $primary-color;
+            border-radius: 50%;
+            @include desktop {
+              width: 72px;
+              height: 72px;
+              border: none;
+            }
+          }
+          .carousel-profile {
+            display: block;
+            &__user-name,
+            &__user-tag-name {
+              margin-left: 16px;
+              @include desktop {
+                padding-top: 10px;
+                margin-left: 30px;
+              }
+            }
+            &__user-name {
+              width: 85px;
+              height: 30px;
+              font-size: 12px;
+              line-height: 30px;
+              color: $primary-color;
+              @include desktop {
+                width: 127px;
+                height: 30px;
+                font-size: 18px;
+              }
+            }
+            &__user-tag-name {
+              width: 87px;
+              height: 30px;
+              font-size: 11px;
+              line-height: 30px;
+              position: relative;
+              bottom: 14px;
+              @include desktop {
+                font-size: 16px;
+              }
+            }
+          }
+        }
       }
     }
-    &__prev-btn, &__next-btn{
+    &__prev-btn,
+    &__next-btn {
       display: none;
       @include desktop {
         display: block;
         width: 64px;
         height: 64px;
+        cursor: pointer;
       }
       @include tablet {
         display: block;
@@ -104,67 +178,6 @@
         display: block;
         width: 40px;
         height: 40px;
-      }
-    }
-  }
-  &-user {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    bottom: 30px;
-    @include desktop {
-      margin-top: 40px;
-    }
-    @include tablet-small {
-      margin-top: 30px;
-      bottom: -30px;
-    }
-    @include tablet {
-      bottom: -30px;
-    }
-    &__avatar {
-      width: 48px;
-      height: 48px;
-      border: 2px solid $primary-color;
-      border-radius: 50%;
-      @include desktop {
-        width: 72px;
-        height: 72px;
-        border: none;
-      }
-    }
-    .section3-profile {
-      display: block;
-      &__user-name,
-      &__user-tag-name {
-        margin-left: 16px;
-        @include desktop {
-          padding-top: 10px;
-          margin-left: 30px;
-        }
-      }
-      &__user-name {
-        width: 85px;
-        height: 30px;
-        font-size: 12px;
-        line-height: 30px;
-        color: $primary-color;
-        @include desktop {
-          width: 127px;
-          height: 30px;
-          font-size: 18px;
-        }
-      }
-      &__user-tag-name {
-        width: 87px;
-        height: 30px;
-        font-size: 11px;
-        line-height: 30px;
-        position: relative;
-        bottom: 14px;
-        @include desktop {
-          font-size: 16px;
-        }
       }
     }
   }
