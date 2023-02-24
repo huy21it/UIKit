@@ -13,6 +13,7 @@
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
   </head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html-inspector/0.8.2/html-inspector.js"></script>
   <script>
     HTMLInspector.inspect();
   </script>
@@ -23,7 +24,6 @@
 
     <include src="./layout/footer.html"></include>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html-inspector/0.8.2/html-inspector.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
@@ -116,6 +116,44 @@
     <script type="text/javascript">
       $('.list-carousel').slick({
         arrows: false,
+      });
+      $('.section6__list-card').slick({
+        mobileFirst: true,
+        dots: true,
+        arrows: false,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        variableWidth: true,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            },
+          },
+          {
+            breakpoint: 640,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 400,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 280,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+        ],
       });
       $('.section3-content__prev-btn').click(function () {
         $('.list-carousel').slick('slickPrev');
