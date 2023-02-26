@@ -8,6 +8,9 @@
   justify-content: center;
   text-align: center;
   background-color: #f6f6f6;
+  @include desktop {
+    height: 900px;
+  }
   @include tablet {
     height: 449px;
   }

@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  height: 1304px;
   @include tablet {
     height: 520px;
   }
@@ -16,6 +17,7 @@
   }
   @include desktop-lager {
     justify-content: center;
+    height: 820px;
   }
   &__title {
     font-size: 20px;
